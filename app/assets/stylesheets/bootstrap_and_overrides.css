@@ -4,3 +4,21 @@
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
 */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: oblique;
+  /*font-family: 'Quicksand', sans-serif;*/
+}
+
+.btn-primary {
+  border-radius: 25.5px;
+  background-image: linear-gradient(to left, #f36e21 , #ff007e );
+  background-blend-mode: color;
+  box-shadow: 0px 4px 16.4px 4.6px rgba(53, 53, 53, 0.26);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
