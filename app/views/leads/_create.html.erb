@@ -1,0 +1,17 @@
+
+    <%= form_for Lead.new do |ld| %>
+        <div class="form-group">
+            <%= ld.text_field :firstName, class: "form-control" %>
+        </div>
+
+        <div class="form-group">
+            <%= ld.text_field :email, class: "form-control" %>
+        </div>
+
+        <div class="form-group">
+            <%= ld.text_field :company, class: "form-control" %>
+        </div>
+        
+       <%= ld.submit "Enviar", class: "btn btn-primary" %>
+        
+    <% end %>

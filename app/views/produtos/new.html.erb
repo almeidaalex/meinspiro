@@ -1,0 +1,23 @@
+
+    <%= form_for Produto.new do |f| %>
+        <div class="form-group">
+            <%= f.label :nome, "Nome" %>
+            <%= f.text_field :nome, class: "form-control" %>
+        </div>
+
+        <div class="form-group">    
+        <%= f.label :descricao, "Descrição" %>  
+        <%= f.text_area :descricao, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= f.label :quantidade, "Quantidade" %>
+        <%= f.number_field :quantidade, step: 2, class: "form-control" %>
+        </div>
+        
+        <div class="form-group">
+            <%= f.label :preco, "Preço" %> 
+            <%= f.text_field :preco, class: "form-control" %>
+        </div>
+       <%= f.submit "Criar produto", class: "btn btn-primary" %>
+        
+    <% end %>

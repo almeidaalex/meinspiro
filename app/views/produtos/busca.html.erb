@@ -1,0 +1,21 @@
+  <table class="table table-stripped table-condensed">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Descricao</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @produtos.each do |produto| %>
+                <tr>
+                    <td><%= produto.nome %></td>
+                    <td><%= produto.descricao %></td>
+                    <td><%= produto.preco %></td>
+                    <td><%= produto.quantidade %></td>
+                  
+                </tr>
+                <% end %>
+            </tbody>
+        </table>    
