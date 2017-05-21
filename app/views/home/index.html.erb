@@ -1,13 +1,29 @@
 
- <div class="intro-header">
 
-        <div class="jumbotron">
-            <h1>microempreededor,</h1>
-            <p>apreenda a gerenciar seu negócio de maneira fácil e eficaz!</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">assista o video</a></p>
-       </div>  
-      <div class="container">
-        <%= yield %>
-        <%= render :partial => "leads/create" %>
-      </div>
-    </div>
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">microempreededor</h1>
+                        <h2 class="intro-text">apreenda a gerenciar seu negócio de maneira fácil e eficaz!</h2>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">assista o video</a></p>
+      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+      <section id="body" style="background-color: #fff; padding: 50px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <%= render :partial => "posts/index" %>
+                </div>
+                <div class="col-lg-3">
+                    <%= render :partial => "leads/create" %>
+                </div>
+            </div>
+        </div>
+    </section>
