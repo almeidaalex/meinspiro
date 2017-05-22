@@ -1,13 +1,13 @@
-<div class="side-bar">
-    <p>
+<div class="side-bar row">
+    <div class="col-sm-6 col-lg-12">
         inscreva-se e garanta acesso
         <span class="gradient-text" style="font-size: 62px"> gratuito</span>
         à vídeos e downloads sobre gerenciamento de
         <span class="gradient-text text-wrap">microeempresas</span>
         <hr>
-    </p>
-    <p>
-        <span class="gradient-text">beneficios:</span>
+    </div>
+    <div class="col-sm-6 col-lg-12">
+        <p class="gradient-text">beneficios:</p>
         <ul class="list-unstyled">
             <li>+ Planilhas Excel</li>
             <li>+ Vídeos Tutoriais</li>
@@ -15,9 +15,9 @@
             <li>+ Newsletter</li>
         </ul>
         <hr>
-    </p>
+    </div>
     <%= form_for Lead.new do |ld| %>
-        <p> <span class="gradient-text">inscreva-se:</span> </p>
+        <div class="col-lg-12"> <p class="gradient-text">inscreva-se:</p> </div>
         <div class="form-group">
             <%= ld.text_field :firstName, class: "form-control", placeholder: "Nome", required: "true" %>
         </div>

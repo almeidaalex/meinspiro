@@ -92,3 +92,16 @@ body {
 small {
   font-size: 75%;
 }
+
+.modal-content {
+  background-color: #000;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+.close {
+  color: #fff;
+  font-size: 20px;
+}
