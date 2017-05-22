@@ -1,11 +1,29 @@
-
-<style>
-
-</style>
-
+<div class="side-bar">
+    <p>
+        inscreva-se e garanta acesso
+        <span class="gradient-text" style="font-size: 62px"> gratuito</span>
+        à vídeos e downloads sobre gerenciamento de
+        <span class="gradient-text text-wrap">microeempresas</span>
+        <hr>
+    </p>
+    <p>
+        <span class="gradient-text">beneficios:</span>
+        <ul class="list-unstyled">
+            <li>+ Planilhas Excel</li>
+            <li>+ Vídeos Tutoriais</li>
+            <li>+ Artigos Exclusivos</li>
+            <li>+ Newsletter</li>
+        </ul>
+        <hr>
+    </p>
     <%= form_for Lead.new do |ld| %>
+        <p> <span class="gradient-text">inscreva-se:</span> </p>
         <div class="form-group">
-            <%= ld.text_field :firstName, class: "form-control", placeholder: "Nome" %>
+            <%= ld.text_field :firstName, class: "form-control", placeholder: "Nome", required: "true" %>
+        </div>
+
+        <div class="form-group">
+            <%= ld.text_field :lastName, class: "form-control", placeholder: "Sobrenome", required: "true" %>
         </div>
 
         <div class="form-group">
@@ -19,7 +37,11 @@
         <div class="form-group">
             <%= ld.text_field :companySegment, class: "form-control", placeholder: "Segmento" %>
         </div>
-
-       <%= ld.submit "enviar", class: "btn btn-lg btn-primary" %>
-        
+        <div clas="row">
+            <div class="col-md-offset-2 col-md-8 col-sm-offset-4 col-sm-4">
+                <%= ld.submit "enviar", class: "btn btn-lg btn-primary btn-full" %>
+            </div>
+        </div>
     <% end %>
+</div>
+
