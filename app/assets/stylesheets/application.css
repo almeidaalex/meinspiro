@@ -46,6 +46,18 @@ p {
     line-height: 1.6;
   }
 }
+
+a:hover {
+  color: #ff007e;
+  text-decoration: none;
+}
+a,
+a:focus,
+a:active {
+  color: white;
+  font-weight: 700;
+}
+
 .light {
   font-weight: 400;
 }

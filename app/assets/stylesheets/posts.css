@@ -6,13 +6,17 @@ h1,h2,h3,h4 {
   text-transform: unset !important;
 }
 
-.post-content p{
+.post-content p {
   font-family: 'Quicksand';
   font-size: 14px;
 }
 
-.post-content {
+.post-preview {
   overflow-y: hidden;
   text-overflow: ellipsis;
   max-height: 369px;
+}
+
+.post-content a {
+  color: #000;
 }
