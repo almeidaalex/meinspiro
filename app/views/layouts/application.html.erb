@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Blog de Empreendedorismo destinado a ajudar na gestão de negócios das micro e pequenas empresas que estão em busca de materiais para melhorar seus resultados. Acesse.">
+    <meta name="author" content="meinspiro">
 
-    <title>meinspiro</title>
+    <title>Empreendedorismo | Gestão de negócios para Micro e Pequenas Empresas</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -37,7 +37,7 @@
                         <a href="#start">início</a>
                     </li>
                     <li>
-                        <a href="#services">downloads</a>
+                        <a href="#" data-toggle="modal" data-target="#subscribe">downloads</a>
                     </li>
               
                     <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#subscribe">
@@ -52,13 +52,13 @@
 
     <%= yield %>
   </body>
-  <footer>
+  <footer class="hidden-xs">
     <div class="container">
         <div class="row">
            <div class="col-md-3 col-sm-3">
-            <span>início</span>
+            <a href="#start">início</a>
             <hr>
-            <span>downloads</span>
+            <a href="#" data-toggle="modal" data-target="#subscribe">downloads</a>
             <hr>
              <button type="button" class="btn btn-primary navbar-btn">
                 <span class="glyphicon glyphicon-heart"></span> <strong>inscreva-se</strong>
@@ -73,6 +73,16 @@
         </div>
     </div>
   </footer>
+  <footer class="hidden-lg hidden-md">
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-8">
+           <button type="button" class="btn btn-primary">
+                <span class="glyphicon glyphicon-heart"></span> <strong>inscreva-se</strong>
+            </button>
+      </div>
+    </div>
+  </footer>
+
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -106,9 +116,7 @@
         
         <%= render :partial => "leads/modal" %>
       </div>
-      <%#<div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-      </div>%>
+     
     </div>
 
   </div>

@@ -13,36 +13,6 @@
             <li>+ Newsletter</li>
         </ul>
     </div>
-    <%= form_for Lead.new do |ld| %>
-        
-        <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
-            <p class="gradient-text" style="margin-top: 15px" >inscreva-se:</p> 
-            
-            <div class="form-group">
-                <%= ld.text_field :firstName, class: "form-control", placeholder: "Nome", required: "true" %>
-            </div>
-
-            <div class="form-group">
-                <%= ld.text_field :lastName, class: "form-control", placeholder: "Sobrenome", required: "true" %>
-            </div>
-
-            <div class="form-group">
-                <%= ld.email_field :email, class: "form-control", placeholder: "E-mail" %>
-            </div>
-
-            <div class="form-group">
-                <%= ld.text_field :company, class: "form-control", placeholder: "Empresa" %>
-            </div>
-            
-            <div class="form-group">
-                <%= ld.text_field :companySegment, class: "form-control", placeholder: "Segmento" %>
-            </div>
-            <div clas="row">
-                <div class="col-md-offset-2 col-md-8 col-sm-offset-4 col-sm-4">
-                    <%= ld.submit "enviar", class: "btn btn-lg btn-primary btn-full" %>
-                </div>
-            </div>
-        </div>
-    <% end %>
+    <%= render :partial => "leads/form" %>
 </div>
 

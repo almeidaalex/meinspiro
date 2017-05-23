@@ -10,3 +10,9 @@ h1,h2,h3,h4 {
   font-family: 'Quicksand';
   font-size: 14px;
 }
+
+.post-content {
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  max-height: 369px;
+}
