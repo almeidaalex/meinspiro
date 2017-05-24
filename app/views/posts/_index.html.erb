@@ -2,7 +2,7 @@
 
 <% @posts.each do |post| %>
         <div class="thumbnail">
-            <%= image_tag("posts/post-1.jpg") %>
+            <%= link_to image_tag("posts/post-1.jpg"), post_show_url(:id => post.id, :friendlyUrl => post.friendlyUrl) %>
 
             <div class="caption">
                 <h1 class="text-center"><%= link_to post.title, post_show_url(:id => post.id, :friendlyUrl => post.friendlyUrl) %></h1>
