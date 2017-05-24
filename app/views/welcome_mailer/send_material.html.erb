@@ -7,15 +7,38 @@
     </style>
   </head>
 
-  <body>
-    <h1>Welcome to example.com, <%= @lead.firstName %></h1>
-    <p>
-      You have successfully signed up to example.com,
-      your username is: <%= @lead.firstName %>.<br>
-    </p>
-    <p>
-      To login to the site, just follow this link: <%= @url %>.
-    </p>
-    <p>Thanks for joining and have a great day!</p>
+  <body style="font-family: 'Trebuchet MS', sans-serif; margin: 20px; color:#1c1a1a;">
+    <div id="principal" style="background:#f1e9e5;">
+          <div style="background:#151414; height:160px;">
+          <img style="display: block; margin: auto; padding-top: 30px;" src="http://i.imgur.com/G56sMV4.png" alt="meinspiro">
+        </div>
+        <h1 style="text-align:center; margin:40px; font-size:40px;">Olá, <%= @lead.firstName %></h1>
+        <hr style="	height: 10px;	border: 0;	box-shadow: 0 10px 10px -10px #8c8b8b inset;">
+        <div id="corpo" style="margin: 0 25px;">
+          <p>
+            Obrigada pelo interesse em nosso <strong>Kit Planilha + E-book Fluxo de Caixa para MPEs.</strong><br>
+          </p>
+          <p>
+            Aqui estão os materiais para você baixar e acessar sempre que necessário:
+          </p>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/0B-cJVjjF-ZtkcUQwWklodnRsMXM/view?usp=sharing">Planilha Fluxo de Caixa</a></li>
+            <li><a href="https://drive.google.com/file/d/0B-pZRJNz32frZ1RDdEJRYURDdEk/view?usp=sharing">E-book Fluxo de Caixa para MPEs</a></li>
+          </ul>
+          <p>
+            Esperamos que estes materiais te ajudem a organizar ainda mais a Gestão Financeira da seu negócio. :)
+          </p>
+          <p>
+            Bons negócios!
+          </p>
+          <p>Abraços,<br>
+          <strong style="color:#ff7300">Equipe MEInspiro</strong>
+              <p style="font-size: 12px;">Volte ao site acessando o link:  <a href="https://meinspiro.com.br/">https://meinspiro.com.br/</a></p>
+          </p>
+        </div>
+        <div style="background:#151414;">
+          <a href="https://meinspiro.com.br/"><img style="display: block; margin: auto;" src="http://i.imgur.com/1YTNXWH.jpg" alt="Logo Meinspiro"></a>
+        </div>
+    </div>
   </body>
 </html>
