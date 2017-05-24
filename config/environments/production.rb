@@ -95,4 +95,8 @@ Rails.application.configure do
 		api_key: 'key-9678e8a734b0da82a690bfb27730f975',
 		domain: 'mg.meinspiro.com.br'
   }
+  
+  #Ajustando tempo para BRT
+  config.active_record.default_timezone = :utc
+  config.time_zone = 'Brasilia'
 end
