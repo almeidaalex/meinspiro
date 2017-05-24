@@ -1,9 +1,10 @@
 class WelcomeMailer < ApplicationMailer
-    default from: 'nao_responda@mg.meinspiro.com.br'
+    default from: 'naoresponda@meinspiro.com.br'
     layout 'mailer'
 
     def send_material(lead)
-        @lead = lead
-        mail(to: @lead.email, subject: "Receba nosso material")
+       @lead = lead
+   
+       mail(to: @lead.email, subject: "Nosso material acabou de chegar na sua caixa!");
     end
 end

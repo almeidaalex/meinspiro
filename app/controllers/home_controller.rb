@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
     def index
-        @show_video = false;
-        @laranjas = Post.all
+        @posts =  Post.all.order(created_at: :desc)
     end
     
 end
