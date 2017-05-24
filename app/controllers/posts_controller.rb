@@ -11,13 +11,20 @@ class PostsController < ApplicationController
 
     def create 
         @post = Post.new(post_params)
+        @post.friendlyUrl = @post.title.gsub(' ', '-').downcase
         @post.save
     end
 
+    def destroy
+        id = params[:id]
+        Post.delete id
+        redirect_to new_writer_path
+    end
+    
     private 
 
     def post_params 
-        params.require(:post).permit(:author,:body, :title)
+        params.require(:post).permit(:author,:body, :title, :scheduled_to,:friendlyUrl)
     end
     
 end
