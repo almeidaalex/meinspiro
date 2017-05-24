@@ -1,5 +1,5 @@
 class WelcomeMailer < ApplicationMailer
-    default from: 'naoresponda@meinspiro.com.br'
+    default from: 'Marina Bittencourt | MEInspiro <noreply@meinspiro.com.br>'
     layout 'mailer'
 
     def send_material(lead)
