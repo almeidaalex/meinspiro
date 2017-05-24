@@ -5,7 +5,7 @@
             <%= image_tag("posts/post-1.jpg") %>
 
             <div class="caption">
-                <h1 class="text-center"><%= post.title %></h1>
+                <h1 class="text-center"><%= link_to post.title, post_show_url(:id => post.id, :friendlyUrl => post.friendlyUrl) %></h1>
                 <h4 class="text-center">Por <%= post.author %> <%= post.created_at.strftime("em %d/%m/%Y") %></h4>
                 <div class="text-justify post-content post-preview">
                     <%= markdown.render(post.body).html_safe %>
