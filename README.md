@@ -1,5 +1,5 @@
 # MEInspiro
-Projeto de Leads do grupo GamaRay - #6 Gama Experience, Gama Academy
+Projeto de Leads do grupo GamaRay
 
 HACKERS: Alex Almeida, Denis Dias, Jessica Lopes
 

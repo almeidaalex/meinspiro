@@ -15,5 +15,8 @@
         <div class="col-lg-8 post-content text-justify">
             <%= markdown.render(@post.body).html_safe %>
         </div>
+        <div class="col-lg-4">
+            <%= render :partial => "leads/create" %>
+        </div>
     </div>
 </div>
