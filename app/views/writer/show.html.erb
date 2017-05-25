@@ -1,8 +1,9 @@
+
 <div class="row">
     <div class="col-md-offset-3 col-md-6">
-        <%= form_for @post do |post|%>
+        <%= form_for(@post, method: "patch") do |post| %>
             <%= render partial: "form", locals: {:post => post} %>
-            <%= post.submit "salvar", class: "btn btn-success" %>
+            <%= post.submit "Atualizar", class: "btn btn-success" %>
         <% end %>
     </div>
 </div>

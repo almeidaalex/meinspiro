@@ -1,3 +1,31 @@
 <div class="row">
+    <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
     
+     <table class="table">
+            <thead>
+                <tr>
+                    <th>Autor</th>
+                    <th>Titulo</th>
+                    <th>Data</th>
+                </tr>
+            </thread>
+            <tbody>
+                <% @allPosts.each do |post|%>
+                <tr>
+                    <td><%= post.author%></td>
+                    <td><%= post.title%></td>
+                    <td><%= post.created_at%> </td>
+                    <td><%= link_to "Editar", writer_show_path(post) , class: "btn btn-info" %></td>
+                    <td><%= link_to "Remover", post, class: "btn btn-danger", method: :delete %></td>
+                </tr>
+                <% end %>
+            </tbody>
+            <tfoot>
+                <tr colspan="5">
+                    <td><%= link_to "Novo Post", writer_new_path, class: "btn btn-info" %></td>   
+                </tr>
+            </tfoot>
+        </table>   
+
+        </div> 
 </div>
