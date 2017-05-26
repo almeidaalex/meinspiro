@@ -1,7 +1,9 @@
 class WriterController < ApplicationController
     layout 'writer'
     protect_from_forgery with: :exception
-    http_basic_authenticate_with name: "gamaray", password: "Grupo08", except: :index
+
+    user = User.first
+    http_basic_authenticate_with name: user.name, password: user.pwd
 
     def index
         @allPosts = Post.all.order(created_at: :desc)
