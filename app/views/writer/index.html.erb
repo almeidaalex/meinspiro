@@ -2,7 +2,7 @@
     <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
     
      <table class="table">
-            <thead>
+          <thead>
                 <tr>
                     <th>Autor</th>
                     <th>Titulo</th>
@@ -25,7 +25,11 @@
                     <td><%= link_to "Novo Post", writer_new_path, class: "btn btn-info" %></td>   
                 </tr>
             </tfoot>
-        </table>   
-
-        </div> 
+        </table>  
+        </div>
+</div>
+<div class="row">
+    <div class="col-sm-offset-2 col-sm-8">
+        <%= link_to "Show me the (fucking) leads!!", lead_csv_path(format: "csv"), class:"btn btn-success btn-full" %> 
+    </div>    
 </div>

@@ -1,3 +1,4 @@
+
 class LeadsController < ApplicationController
     def create
        
@@ -19,10 +20,23 @@ class LeadsController < ApplicationController
         render :leads_thanks
     end
 
+    def csv 
+        @csv_leads = to_csv
+        
+        respond_to do |format|
+            format.html
+            format.csv { send_data @csv_leads }
+        end
+    end
+
     private
 
     def lead_params
         params.require(:lead).permit!
+    end
+
+    def to_csv 
+      Lead.all.map {|ld| ld.to_csv}.join("\n")
     end
 
 end
